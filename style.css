@@ -147,15 +147,11 @@ section {
 }
 
 .ic-project-dropdown {
-    max-width: 20%;
+    max-width: 25%;
 }
 
 .ic-project-search {
-    max-width: calc(65% - 30px);
-}
-
-.ic-project-btn {
-    max-width: 15%;
+    max-width: calc(75% - 30px);
 }
 
 .ic-form-grp select {
@@ -185,21 +181,6 @@ section {
 .ic-form-grp select:focus,
 .ic-form-grp select:hover {
     border-color: #2906f3;
-}
-
-.ic-form-btn {
-    background-color: #2906f3;
-    padding: 14px 24px;
-    font-size: 18px;
-    cursor: pointer;
-    line-height: 24px;
-    color: #ffffff;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    width: 100%;
-    max-width: 160px;
 }
 
 .ic-main__wrapper {
@@ -276,8 +257,7 @@ section {
 
 
 @media only screen and  (max-width: 767px) {
-    .ic-form__row>div,
-    .ic-form-btn {
+    .ic-form__row>div {
         max-width: 100%;
     }
 
