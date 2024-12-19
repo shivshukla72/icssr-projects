@@ -1,0 +1,289 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #010101;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #010101;
+}
+
+
+h1 {
+    font-size: 42px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+h5 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 64px;
+        line-height: 72px;
+    }
+    
+    h2 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+    
+    h3 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+    
+    h4 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    h6 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.ic-container {
+    max-width: 1260px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.ic-head {
+    margin-bottom: 60px;
+}
+
+.ic-head__title {
+    font-size: 64px;
+    line-height: 78px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.ic-form__row {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ic-form__row>div {
+    flex: 0 0 100%;
+}
+
+.ic-project-dropdown {
+    max-width: 20%;
+}
+
+.ic-project-search {
+    max-width: calc(65% - 30px);
+}
+
+.ic-project-btn {
+    max-width: 15%;
+}
+
+.ic-form-grp select {
+    background: transparent;
+    font-size: 18px;
+    line-height: 26px;
+    padding: 14px 18px;    
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    transition: border 0.3s linear;
+    width: 100%;
+}
+
+.ic-head input[type="text"] {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #ededed;
+    border-radius: 8px;
+    transition: border 0.3s linear;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.ic-head input[type="text"]:focus,
+.ic-head input[type="text"]:hover,
+.ic-form-grp select:focus,
+.ic-form-grp select:hover {
+    border-color: #2906f3;
+}
+
+.ic-form-btn {
+    background-color: #2906f3;
+    padding: 14px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 160px;
+}
+
+.ic-main__wrapper {
+    overflow: auto;
+    height: 900px;
+    max-width: 1220px;
+    width: 100%;
+}
+
+.ic-table__head,
+.ic-table__row {
+    display: flex;
+}
+
+.ic-table__head-col,
+.ic-table__row-col {
+    flex: 0 0 100%;
+    border-collapse: collapse;
+    border: 1px solid #e4e4e4;
+}
+
+.col-sr-no {
+    max-width: 80px;
+}
+
+.col-file-name {
+    max-width: 220px;
+}
+
+.col-student-name {
+    max-width: 200px;
+}
+
+.col-final-title {
+    max-width: 400px;
+}
+
+.col-pmfs {
+    max-width: 200px;
+}
+
+.col-debit-date {
+    max-width: 100px;
+}
+
+.ic-table__head-col-label {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 10px 8px;
+}
+
+.ic-table__row-col-data {
+    padding: 10px 8px;
+    display: inline-block;
+}
+
+.ic-no-result {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    width: 100%;
+}
+
+.ic-no-result__img {
+    max-width: 300px;
+    margin: 0 auto 20px;
+}
+
+.ic-main__wrapper.no-result--active  .ic-table__head{
+    display: none;
+}
+
+
+@media only screen and  (max-width: 767px) {
+    .ic-form__row>div,
+    .ic-form-btn {
+        max-width: 100%;
+    }
+
+    .ic-head__title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+}

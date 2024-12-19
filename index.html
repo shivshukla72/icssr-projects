@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSSR Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="ic-container">
+            <div class="ic-head">
+                <div>
+                    <h1 class="ic-head__title">ICSSR Project</h1>
+                </div>
+                <form action="#">
+                    <div class="ic-form__row">
+                        <div class="ic-form-grp ic-project-dropdown">
+                            <select id="ic-project-dropdown" name="ic-project-dropdown" id="ic-projects">
+                                <option value="longitudinal" selected>Longitudinal</option>
+                                <option value="vision-viksit-bharat"">Vision Viksit Bharat</option>
+                            </select>
+                        </div>
+                        <div class="ic-form-grp ic-project-search">
+                            <input type="text" placeholder="Search by File Name"  name="ic-search-field" id="ic-search-field">
+                        </div>
+                        <div class="ic-form-grp ic-project-btn">
+                            <button type="submit" class="ic-form-btn">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="ic-main__wrapper" class="ic-main__wrapper">
+                <div class="ic-table">
+                    <div class="ic-table__head">
+                        <div class="ic-table__head-col col-sr-no"><span class="ic-table__head-col-label">Sr No.</span></div>
+                        <div class="ic-table__head-col col-file-name"><span class="ic-table__head-col-label">File Number</span></div>
+                        <div class="ic-table__head-col col-student-name"><span class="ic-table__head-col-label">Name</span></div>
+                        <div class="ic-table__head-col col-final-title"><span class="ic-table__head-col-label">Final Title</span></div>
+                        <div class="ic-table__head-col col-pmfs"><span class="ic-table__head-col-label">PMFS Linked Account</span></div>
+                        <div class="ic-table__head-col col-debit-date"><span class="ic-table__head-col-label">Debit Date</span></div>
+                    </div>
+                    <div class="ic-table__body"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
