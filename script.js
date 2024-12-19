@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   let tableBody = document.querySelector('.ic-table__body');
   let mainWrapper = document.getElementById('ic-main__wrapper');
+  const searchField = document.getElementById("ic-search-field");
+
   let finalData;
 
   // Function to fetch and process XLSX file
@@ -93,9 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     showProjects(finalData,finalData.length);
+    if(searchField.value.length>0) {
+      performSearch(searchField.value);
+
+    }
   });
 
-  const searchField = document.getElementById("ic-search-field");
   const debounce = (func, delay) => {
     let timeout;
     return (...args) => {
@@ -116,7 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
     if (filteredResults.length > 0) {
       showProjects(filteredResults,filteredResults.length)
     } else {
-      noResult();
+    let noResultWrapper = document.querySelector('.ic-no-result');
+      if(!noResultWrapper) {
+        noResult();
+      }
     }
   };
 
